@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/carrbs/pouch/issues"
   },
-  "homepage": "https://github.com/carrbs/pouch#readme"
+  "homepage": "https://github.com/carrbs/pouch#readme",
+  "dependencies": {
+    "express": "4.x"
+  }
 }
