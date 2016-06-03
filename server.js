@@ -2,7 +2,7 @@ import express from 'express';
 import React from 'react';
 import ReactDOM from 'react-dom/server';
 
-import {YarWoot} from './src/components';
+import {Box} from './src/components';
 
 const PORT = 3000;
 var app = express();
@@ -12,7 +12,7 @@ app.listen(PORT, () =>
 );
 
 app.get('*', (request, response) => {
-    var example = ReactDOM.renderToString(<YarWoot />);
+    var example = ReactDOM.renderToString(<Box />);
     response.end(example);
 });
 
