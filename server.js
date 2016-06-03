@@ -1,11 +1,11 @@
-var express = require('express');
-var app = express();
-var React = require('react');
-var ReactDOM = require('react-dom/server');
+import express from 'express';
+import React from 'react';
+import ReactDOM from 'react-dom/server';
 
 import {YarWoot} from './src/components';
 
 const PORT = 3000;
+var app = express();
 
 app.listen(PORT, () =>
     console.log("Server listenin' on: http://localhost:%s", PORT)
