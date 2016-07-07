@@ -1,0 +1,27 @@
+make a index.html
+load that in server.js
+do the script thing from facebook
+client.js file
+
+index.html:
+<html>
+ ...
+ <body>
+ <div id="mount">HTML</div>
+ <script src="/bundle.js"></script>
+
+ client.js:
+ var mount = document.getElementById('mount);
+ ReactDOM.render(
+    <Box />,
+    mount
+);
+
+server.js:
+var tmpl = fs.readFileSync('index.html')
+middleware -> function(req, res) {
+  res.send(tmpl.replace(/HTML/, React.renderToString(<Box />
+}
+webpack:
+
+> webpack client.js poops out bundle.js somehow
